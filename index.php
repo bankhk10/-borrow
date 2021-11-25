@@ -9,7 +9,7 @@
  * @see http://www.kotchasan.com/
  */
 if (!is_file('settings/config.php')) {
-    // ติดตั้งครั้งแรก
+    // ติดตั้งครั้งแรกs
     header('Location: load.php');
 } else {
     // load Kotchasan
