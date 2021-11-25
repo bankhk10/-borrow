@@ -71,7 +71,7 @@ class View extends \Gcms\View
             'labelClass' => 'g-input icon-password',
             'label' => '{LNG_Password}',
             'comment' => '{LNG_Passwords must be at least four characters}',
-            'maxlength' => 20,
+            'maxlength' => 2200,
             'validator' => array('keyup,change', 'checkPassword'),
         ));
         // repassword

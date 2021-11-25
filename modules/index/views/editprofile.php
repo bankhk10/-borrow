@@ -75,7 +75,7 @@ class View extends \Gcms\View
                 'labelClass' => 'g-input icon-password',
                 'label' => '{LNG_Password}',
                 'placeholder' => '{LNG_Passwords must be at least four characters}',
-                'maxlength' => 20,
+                'maxlength' => 200,
                 'validator' => array('keyup,change', 'checkPassword'),
             ));
             // repassword
@@ -85,7 +85,7 @@ class View extends \Gcms\View
                 'labelClass' => 'g-input icon-password',
                 'label' => '{LNG_Repassword}',
                 'placeholder' => '{LNG_Enter your password again}',
-                'maxlength' => 20,
+                'maxlength' => 200,
                 'validator' => array('keyup,change', 'checkPassword'),
             ));
         }

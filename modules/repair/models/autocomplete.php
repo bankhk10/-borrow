@@ -51,7 +51,7 @@ class Model extends \Kotchasan\Model
                     ->from('inventory V')
                     ->join('inventory_items I', 'INNER', array('I.inventory_id', 'V.id'))
                     ->where($where)
-                    ->limit($request->post('count', 20)->toInt())
+                    ->limit($request->post('count', 100)->toInt())
                     ->toArray();
                 if (isset($order)) {
                     $query->order($order);

@@ -279,7 +279,9 @@ class Currency
                 case $number < pow(10, 3):
                     $string = self::engFormat(intval(floor($number / pow(10, 2)))).' hundred';
                     if ($number % pow(10, 2)) {
+                        
                         $string .= ' and '.self::engFormat($number % pow(10, 2));
+                        
                     }
                     break;
                 case $number < pow(10, 6):

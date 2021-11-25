@@ -54,7 +54,7 @@ class View extends \Gcms\View
                 'labelClass' => 'g-input icon-number',
                 'itemClass' => 'width50',
                 'label' => '{LNG_Serial/Registration No.}',
-                'maxlength' => 20,
+                'maxlength' => 200,
                 'value' => isset($product->product_no) ? $product->product_no : '',
             ));
         }
